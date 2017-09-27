@@ -16,6 +16,7 @@ export class AppComponent {
 
   onClick(): void {
     this.http.get("https://2j162c91nb.execute-api.us-east-1.amazonaws.com/prod/lambda", this.requestOptions).subscribe((response: any) => {
+      console.log("Hello");
       console.log(response);
     });
   }
