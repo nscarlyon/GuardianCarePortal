@@ -1,0 +1,6 @@
+version: 0.2
+
+phases:
+  pre-build:
+    commands:
+      - aws s3 cp dist s3://mybirthyear/dist --recursive
